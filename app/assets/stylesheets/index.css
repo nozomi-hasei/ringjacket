@@ -1,13 +1,18 @@
 body {
   font-size: 2rem;
   min-height: 100vh;
-  width: 800px;
   margin: 0 auto;
   display: grid;
   grid-template:
-  "header header header"
-  "left   center right"
-  "footer footer footer";
+  "... ...... ...... ...... ...... ...... ..." 
+  "... header header header header header ..." 250px
+  "... ...... ...... ...... ...... ...... ..." 10px
+  "... left   ...... center ...... right  ..." 1fr
+  "... ...... ...... ...... ...... ...... ..." 10px
+  "... footer footer footer footer footer ..." 250px
+  "... ...... ...... ...... ...... ...... ..."
+  / auto 150px 10px minmax(300px, 1fr) 10px 150px auto; 
+
 }
 
 header {
@@ -27,11 +32,5 @@ aside {
 }
 
 footer {
-  grid-area: header;
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    width: 100%;
-  }
+  grid-area: footer;
 }
