@@ -1,35 +1,33 @@
 body {
+  font-size: 2rem;
   min-height: 100vh;
   width: 800px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template:
+  "header header header"
+  "left   center right"
+  "footer footer footer";
 }
 
 header {
-  height: 150px;
-}
-
-div {
-  display: flex;
-  flex: 1;
-
+  grid-area: header;
 }
 
 main {
-  flex: 1;
+  grid-area: center;
 }
 
 nav {
-  width: 150px;
+  grid-area: left;
 }
 
 aside {
-  width: 150px;
+  grid-area: right;
 }
 
 footer {
-  height: 150px;
+  grid-area: header;
 }
 
 @media screen and (max-width: 700px) {
