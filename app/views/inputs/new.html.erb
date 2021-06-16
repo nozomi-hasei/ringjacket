@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF8">
+    <title>RING JACKET</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+    　　<h1>RING JACKET</h1>
+    </header>
+    <nav></nav>
+    <main>
+      <h3></h3>
+      <%= form_with(model: @input, local: true) do |form| %>
+        <%= form.text_field :code, placeholder: "プロモーションコード入力" %>
+        <%= form.submit "送信" %>
+      <% end %>
+    </main>
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>

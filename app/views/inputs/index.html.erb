@@ -6,10 +6,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>header</header>
-    <nav>left</nav>
-    <main>center</main>
-    <aside>right</aside>
-    <footer>footer</footer>
+    <header>
+    　　<h1>RING JACKET</h1>
+    </header>
+    <nav></nav>
+    <main>
+      <% @inputs.each do |input| %>
+        <p>特別ご優待　NO.<%= input.id %></p>
+      <% end %>
+    </main>
+    <aside></aside>
+    <footer>
+      <%= link_to "Back", :back %>
+    </footer>
   </body>
 </html>

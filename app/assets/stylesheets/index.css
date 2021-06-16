@@ -7,11 +7,11 @@ body {
   "... ...... ...... ...... ...... ...... ..." 
   "... header header header header header ..." 250px
   "... ...... ...... ...... ...... ...... ..." 10px
-  "... left   ...... center ...... right  ..." 1fr
+  "... left   ...... center ...... right  ..." 160px
   "... ...... ...... ...... ...... ...... ..." 10px
   "... footer footer footer footer footer ..." 250px
   "... ...... ...... ...... ...... ...... ..."
-  / auto 150px 10px minmax(300px, 1fr) 10px 150px auto; 
+  / auto 150px 20px minmax(300px, 1fr) 20px 150px auto; 
 
 }
 
@@ -19,8 +19,39 @@ header {
   grid-area: header;
 }
 
+h1 {
+  font-family: serif;
+  margin: 0 auto;
+  width: 480px;
+  justify-content: center;
+}
+
+p {
+  font-family: serif;
+  margin: 50px 50px 170px 170px;
+  width: 300px;
+  justify-content: center;
+}
+
 main {
   grid-area: center;
+  background-color: rgb(243, 243, 243);
+}
+
+form {
+  margin: 0% auto;
+  text-align: center;
+  width: 550px;
+}
+
+input[type="text"] {
+  width: 400px;
+  height: 50px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 50px;
 }
 
 nav {
@@ -33,4 +64,5 @@ aside {
 
 footer {
   grid-area: footer;
+  font-size: 20px;
 }

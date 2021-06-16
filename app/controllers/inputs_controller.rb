@@ -1,6 +1,6 @@
 class InputsController < ApplicationController
   def index 
-    @inputs = Input.all.order("created_at DESC")
+    @inputs = Input.all.order("created_at DESC").limit(1)
   end
 
   def new
@@ -11,7 +11,7 @@ class InputsController < ApplicationController
     @input = Input.new(input_params)
     if @input.valid?
       @input.save
-      redirect_to new_input_path
+      redirect_to inputs_path
     else
       render new
     end
@@ -19,6 +19,6 @@ class InputsController < ApplicationController
 
   private
   def input_params
-    params.permit(:c_name, :i_name)
+    params.require(:input).permit(:code)
   end
 end
