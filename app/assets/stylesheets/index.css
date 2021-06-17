@@ -21,6 +21,7 @@ header {
 
 h1 {
   font-family: serif;
+  
   margin: 0 auto;
   width: 480px;
   justify-content: center;
@@ -65,4 +66,11 @@ aside {
 footer {
   grid-area: footer;
   font-size: 20px;
+}
+h4, h5 {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 50px 50px;
 }

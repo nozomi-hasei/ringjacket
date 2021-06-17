@@ -7,17 +7,18 @@
   </head>
   <body>
     <header>
-    　　<h1>RING JACKET</h1>
+    　　<h1><%= link_to 'RING JACKET', 'http://www.ringjacket.co.jp/' %></h1>
     </header>
     <nav></nav>
     <main>
       <h3></h3>
       <%= form_with(model: @input, local: true) do |form| %>
-        <%= form.text_field :code, placeholder: "プロモーションコード入力" %>
+        <%= form.text_field :code, placeholder: "プロモーションコードを入力してください" %>
         <%= form.submit "送信" %>
       <% end %>
     </main>
     <aside></aside>
     <footer></footer>
+
   </body>
 </html>
