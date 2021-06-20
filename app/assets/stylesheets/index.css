@@ -11,7 +11,7 @@ body {
   "... ...... ...... ...... ...... ...... ..." 10px
   "... footer footer footer footer footer ..." 250px
   "... ...... ...... ...... ...... ...... ..."
-  / auto 150px 20px minmax(300px, 1fr) 20px 150px auto; 
+  / auto 150px 20px 580px 20px 150px auto; 
 
 }
 
@@ -27,6 +27,10 @@ h1 {
   justify-content: center;
 }
 
+h2 {
+  font-size: 5px;
+  margin: 90% 0 auto;
+}
 p {
   font-family: serif;
   margin: 50px 50px 170px 170px;
@@ -67,10 +71,15 @@ footer {
   grid-area: footer;
   font-size: 20px;
 }
-h4, h5 {
+h4 {
   text-decoration: underline;
 }
-
+h5 {
+  width: 50px;
+  margin: 0 auto;
+  display: block;
+  justify-content:center;
+}
 ul {
   margin: 50px 50px;
 }

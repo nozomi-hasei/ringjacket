@@ -15,16 +15,21 @@
         <p>特別ご優待　NO.<%= input.id %></p>
       <% end %>
     </main>
-    <aside></aside>
+    <aside>
+      <% @inputs.each do |input| %>
+        <h2>発行日:<%= input.created_at.strftime("%Y年%m月%d日") %></h2>
+      <% end %>
+    </aside>
     <footer>
       <h4>ご利用注意事項</h4>
         <ul>
           <li>店頭の商品を10％ご優待価格にてご案内させていただきます。</li>
           <li>新規のご来店のお客様にご利用頂けます。</li>
+          <li>有効期限は発行日より６ヶ月間となります。　
           <li>その他の割引との併用はできません。</li>
         </ul>
 
-      <h5>ご利用可能店舗</h4>
+      <h4>ご利用可能店舗</h4>
         <ul>
           <li>RING JACKET MEISTER 206 淀屋橋店</li>
           <li>RING JACKET MEISTER 206 青山店</li>
