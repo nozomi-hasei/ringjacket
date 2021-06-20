@@ -29,6 +29,7 @@ h1 {
 
 h2 {
   font-size: 5px;
+  font-family: serif;
   margin: 90% 0 auto;
 }
 p {
@@ -73,13 +74,16 @@ footer {
 }
 h4 {
   text-decoration: underline;
+  font-family: serif;
 }
 h5 {
   width: 50px;
   margin: 0 auto;
   display: block;
   justify-content:center;
+  font-family: serif;
 }
 ul {
   margin: 50px 50px;
+  font-family: serif;
 }
