@@ -12,7 +12,7 @@ body {
   "... footer footer footer footer footer ..." 250px
   "... ...... ...... ...... ...... ...... ..."
   / auto 150px 20px 580px 20px 150px auto; 
-
+  
 }
 
 header {
@@ -41,6 +41,7 @@ p {
 main {
   grid-area: center;
   background-color: rgb(243, 243, 243);
+  border-radius: 15px 15px 15px 15px;
 }
 
 form {
@@ -52,11 +53,13 @@ form {
 input[type="text"] {
   width: 400px;
   height: 50px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 input[type="submit"] {
   width: 100px;
   height: 50px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 nav {
