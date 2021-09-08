@@ -5,13 +5,13 @@ body {
   display: grid;
   grid-template:
   "... ...... ...... ...... ...... ...... ..." 
-  "... header header header header header ..." 250px
+  "... header header header header header ..." 700px
   "... ...... ...... ...... ...... ...... ..." 10px
   "... left   ...... center ...... right  ..." 160px
   "... ...... ...... ...... ...... ...... ..." 10px
-  "... footer footer footer footer footer ..." 250px
+  "... footer footer footer footer footer ..." 700px
   "... ...... ...... ...... ...... ...... ..."
-  / auto 150px 20px 580px 20px 150px auto; 
+  / auto 700px 20px 580px 20px 700px auto; 
   
 }
 
@@ -21,7 +21,7 @@ header {
 
 h1 {
   font-family: serif;
-  margin: 0 auto;
+  margin: 450px auto;
   width: 480px;
   justify-content: center;
 }
@@ -88,6 +88,7 @@ h5 {
 ul {
   margin: 50px 50px;
   font-family: serif;
+  text-align: right;
 }
 h1 {
 	-webkit-animation: h1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -138,3 +139,92 @@ h1 {
     text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
   }
 }
+
+/* ボタン全体 */
+.flowbtn17{
+  border-radius:50%;
+  position:relative;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  font-size:30px;
+  text-decoration:none;
+  transition:.5s;
+  background-color:#444;
+  color:#fff;
+  }
+  /* ボタンマウスホバー時のテキスト指定 */
+  .flowbtn17:hover{
+  text-decoration:none;
+  }
+  /* アイコンをど真ん中に */
+  .flowbtn17 i{
+  position:absolute;
+  top:50%;
+  left:50%;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  }
+  /* Twitterマウスホバー時 */
+  .flowbtn17.fl_tw2:hover{
+  background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
+  }
+  /* Instagramマウスホバー時 */
+  .flowbtn17.insta_btn2:hover{
+  background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;		
+  }
+  /* Facebookマウスホバー時 */
+  .flowbtn17.fl_fb2:hover{
+  background:-webkit-linear-gradient(top, #5c80c6 0%, #34528c 74%);	
+  background:linear-gradient(to bottom, #5c80c6 0%, #34528c 74%);
+  }
+  /* Feedlyマウスホバー時 */
+  .flowbtn17.fl_fd2:hover{
+  background:linear-gradient(135deg, #b1ea4d 0%,#459522 100%);
+  font-size:28px;
+  }
+  /* Pocketマウスホバー時 */
+  .flowbtn17.fl_pk2:hover{
+  background:linear-gradient(135deg, #f36265 0%,#dd4f68 100%);
+  }
+  /* はてブアイコンのサイズ */
+  .flowbtn17.fl_hb2{
+  font-size:25px;
+  }
+  /* はてブマウスホバー時 */
+  .flowbtn17.fl_hb2:hover{
+  background:-webkit-linear-gradient(top, #1fbccd 0%, #1c91d4 84%);	
+  background:linear-gradient(to bottom, #1fbccd 0%, #1c91d4 84%);
+  }
+  /* YouTubeマウスホバー時 */
+  .flowbtn17.fl_yu2:hover{
+  background:linear-gradient(135deg, #f5515f 0%,#c9293c 100%);
+  }
+  /* LINEマウスホバー時 */
+  .flowbtn17.fl_li2:hover{
+  background: linear-gradient(135deg, #3a9278 0%,#00c300 100%);
+  }
+  /* お問い合わせマウスホバー時 */
+  .flowbtn17.fl_ma2:hover{
+  background:linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
+  }
+  /* ulタグの内側余白を０にする */
+  ul.snsbtniti2{
+  padding:0!important;
+  }
+  /* ボタン全体の位置 */
+  .snsbtniti2{
+  display:flex;
+  flex-flow:row wrap;
+  }
+  /* ボタン同士の余白 */
+  .snsbtniti2 li{
+  flex:0 0 48%;
+  text-align:center !important;;
+  }
+
+ li {
+   display: inline;
+ }
