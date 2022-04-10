@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF8">
-    <title>RING JACKET</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-    </header>
-    <nav></nav>
-    <main>
-      <%= form_with(model: @input, local: true) do |form| %>
-        <%= form.text_field :code, placeholder: "プロモーションコードを入力してください" %>
-        <%= form.submit "送信" %>
-      <% end %>
-      <h3></h3>
-    </main>
-    <aside></aside>
-    <footer>
-      <div id="ui">
-        <div class="swim_ring_wave"></div>
-        <div class="swim_ring_wave"></div>
-        <div class="swim_ring_wave"></div>
-        <div class="swim_ring_wave"></div>
-      </div>
-    </footer>
-
-  </body>
-</html>
+<%= form_with(model: @input, local: true) do |form| %>
+  <%= form.text_field :code, placeholder: "プロモーションコードを入力してください" %>
+  <%= form.submit "送信" %>
+<% end %>
