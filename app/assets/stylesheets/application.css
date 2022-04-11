@@ -1,3 +1,12 @@
+html{
+  height: 1500px;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  background:radial-gradient(at left top, rgb(255, 255, 255) 20%, rgba(222, 196, 152, 0.997) 100%);
+}
+
 header .link ul{
   position: absolute;
   display: flex;
