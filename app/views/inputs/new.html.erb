@@ -1,4 +1,7 @@
 <%= form_with(model: @input, local: true) do |form| %>
-  <%= form.text_field :code, placeholder: "プロモーションコードを入力してください" %>
+  <%= form.text_field :user_name, placeholder: "お客様のお名前" %>
+  <%= form.text_field :store, placeholder: "ご利用店舗" %>
+  <%= form.text_field :staff, placeholder: "担当スタッフ" %>
+  <%= form.text_field :new_name, placeholder: "ご紹介いただくお客様のお名前" %>
   <%= form.submit "送信" %>
 <% end %>

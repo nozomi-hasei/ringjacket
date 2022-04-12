@@ -19,6 +19,6 @@ class InputsController < ApplicationController
 
   private
   def input_params
-    params.require(:input).permit(:code)
+    params.require(:input).permit(:user_name, :store, :staff, :new_name)
   end
 end
