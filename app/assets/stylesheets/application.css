@@ -2,6 +2,7 @@ html{
   height: 1500px;
 }
 
+
 body{
   background-color: rgb(255, 255, 255);
   background:radial-gradient(at left top, rgb(255, 255, 255) 20%, rgba(222, 196, 152, 0.997) 100%);
@@ -12,16 +13,14 @@ header h1{
   font-weight: 200;
 }
 
-
-
-header .link ul{
+header .sns_link ul{
   position: absolute;
   display: flex;
   list-style: none;
   right: 100px;
   top: 1.8vh;
 }
-header .link li{
+header .sns_link li{
   padding: 0  5% 0 5%;
 }
 
@@ -30,3 +29,41 @@ header #logo{
   width: 25px;
 }
 
+.sign_link{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+.field{
+  margin-left: 45%;
+  margin-right: 50%;
+  white-space: pre;
+}
+
+input[type="email" i]{
+  width: 200px;
+}
+
+input[type="password" i]{
+  width: 200px;
+}
+
+input[type="text"] {
+  width: 400px;
+  height: 50px;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 45%;
+  margin-right: 50%;
+  white-space: pre;
+}
+
+input[type="submit"] {
+  width: 200px;
+  height: 25px;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 46%;
+  margin-right: 50%;
+}
