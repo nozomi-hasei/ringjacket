@@ -30,40 +30,62 @@ header #logo{
 }
 
 .sign_link{
-  text-align: center;
+  text-align: right;
+  margin-right: 3%;
 }
 
 h2{
+  margin-top: 5%;
+  text-align: center;
+}
+
+form {
+  margin-top: 2%;
   text-align: center;
 }
 
 .field{
-  margin-left: 45%;
-  margin-right: 50%;
+  margin-top: 3;
+  margin-left: auto;
+  margin-right: auto;
   white-space: pre;
+}
+
+
+label{
+  text-align: center;
 }
 
 input[type="email" i]{
   width: 200px;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #000000;
+  background-color: rgba(255, 255, 255, 0.343);
 }
 
 input[type="password" i]{
   width: 200px;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #000000;
+  background-color: rgba(255, 255, 255, 0.343);
 }
 
 input[type="text"] {
-  width: 400px;
   height: 50px;
   border-radius: 15px 15px 15px 15px;
-  margin-left: 45%;
-  margin-right: 50%;
+  margin-left: auto;
+  margin-right: auto;
   white-space: pre;
 }
 
 input[type="submit"] {
-  width: 200px;
-  height: 25px;
   border-radius: 15px 15px 15px 15px;
-  margin-left: 46%;
-  margin-right: 50%;
+  margin:0 0 0 3%;
+}
+
+.actions{
+  margin-left: auto;
+  margin-right: auto;
 }
