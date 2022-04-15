@@ -11,7 +11,7 @@ body{
 
 h2{
   font-size: 3.0rem;
-  margin-top: 5%;
+  margin-top: 3%;
   text-align: center;
   padding-left: 4%;
 }
@@ -56,7 +56,9 @@ header #logo{
 .sign_link .post{
   padding: 0 1% 0 1%;
   background-color: #e6e6e697;
-  border-radius: 10px;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  border-bottom: 3px solid #000000;
   padding: 0.5% 1.0% 0.5% 1.0%;
 }
 
@@ -97,18 +99,29 @@ label{
   font-size: 2.0rem;
 }
 
-input[type="email" i]{
+input[type="text"] {
   width: 200px;
   height: 50px;
   border: none;
   border-bottom: 3px solid #000000;
   background-color: rgba(255, 255, 255, 0.343);
+
 }
 
-input[type="password" i]{
+input[type="email"]{
   width: 200px;
   height: 50px;
   border: none;
+  border-radius: 10px 10px 10px 10px;
+  border-bottom: 3px solid #000000;
+  background-color: rgba(255, 255, 255, 0.343);
+}
+
+input[type="password"]{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
   border-bottom: 3px solid #000000;
   background-color: rgba(255, 255, 255, 0.343);
 }
@@ -141,6 +154,7 @@ input[type="submit"] {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+
 /*=レイアウト=*/
 
 #wrapper{
@@ -158,9 +172,20 @@ input[type="submit"] {
   position: sticky;
   top:0;
 	width: 50%;
-	height: 130vh;
+	max-height: 130vh;
 }
 
+.store{
+  margin-top: 10%;
+}
+
+.staff{
+  margin-top: 10%;
+}
+
+.new-name{
+  margin: 10% 0 5% 0;
+}
 /*右エリア*/
 #container{
 	width:50%;
@@ -180,16 +205,57 @@ input[type="submit"] {
   width: 30%;
   margin-top: -3%;
   margin-left: 11%;
-  background-color: rgba(222, 196, 152, 0.502);
+  background-color: rgba(152, 222, 193, 0.502);
   z-index: 30;
 }
 
 #container section .area .area2{
   position: absolute;
   height: 3vh;
+  width: 40%;
+  margin-top: -3%;
+  margin-left: 6%;
+  background-color: rgba(222, 196, 152, 0.563);
+  z-index: 30;
+}
+
+#container section .area .area2-2{
+  position: absolute;
+  height: 3vh;
   width: 44%;
   margin-top: -3%;
   margin-left:4%;
+  background-color: rgba(222, 196, 152, 0.563);
+  z-index: 30;
+}
+
+
+#container section .area .area2-3{
+  position: absolute;
+  height: 3vh;
+  width: 44%;
+  margin-top: -3%;
+  margin-left:4%;
+  background-color: rgba(222, 196, 152, 0.563);
+  z-index: 30;
+}
+
+#container section .area .area2-4{
+  position: absolute;
+  height: 3vh;
+  width: 25%;
+  margin-top: -3%;
+  margin-left: 13%;
+  background-color: rgba(222, 196, 152, 0.563);
+  z-index: 30;
+}
+
+#container section .area .area2-5{
+  position: absolute;
+  height: 3vh;
+  width: 30%;
+  margin-top: -3%;
+  margin-left: 11%;
   background-color: rgba(222, 196, 152, 0.563);
   z-index: 30;
 }
@@ -200,7 +266,7 @@ input[type="submit"] {
   width: 40%;
   margin-top: -3%;
   margin-left: 6%;
-  background-color: rgba(222, 196, 152, 0.512);
+  background-color: rgba(222, 152, 184, 0.512);
   z-index: 30;
 }
 

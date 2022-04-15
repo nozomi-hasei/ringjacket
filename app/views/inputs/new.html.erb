@@ -2,32 +2,47 @@
   <div id="fixed-area">
     <%= form_with(model: @input, local: true) do |form| %>
       <%= form.text_field :user_name, placeholder: "お客様のお名前" %>
-      <div class="">
+      <div class="store">
         <%= form.label :store, 'ご利用店舗' %>
         <%= form.select :store, {'RING JACKET MEISTER 206 淀屋橋店':1, 'RING JACKET MEISTER 206 青山店':2, 'RING JACKET MEISTER 銀座店':3, 'RING JACKET MEISTER 博多店':4, 'RING JACKET GRAN FRONT 大阪店':5, 'RING JACKET 伊勢丹 新宿店':6}, {include_blank: '選択してください'}, {class: '', required: true} %>
       </div>
-      <div class="">
+      <div class="staff">
         <%= form.label :staff, '担当スタッフ' %>
         <%= form.select :staff, {'淀屋店 Y1':1, '淀屋店 Y2':2, '淀屋店 Y3':3, '淀屋店 Y4':4, '青山店 A1':5, '青山店 A2':6, '青山店 A3':7, '銀座店 G1':8, '銀座店 G2':9, '銀座店 G3':10, '博多店 H1':11, '博多店 H2':12, '博多店 H3':13, '大阪店 O1':14, '大阪店 O2':15, '大阪店 O3':16, '新宿店 S1':17, '新宿店 S2':18, '新宿店 S3':19}, {include_blank: '選択してください'}, {class: '', required: true} %>
       </div>
-      <%= form.text_field :new_name, placeholder: "ご紹介いただくお客様のお名前" %>
+      <div class="new-name">
+        <%= form.text_field :new_name, placeholder: "ご紹介いただくお客様のお名前" %>
+      </div>
       <%= form.submit "送信" %>
     <% end %>
   </div>
   <div id="container">
     <section>
       <div class="area">
-        <h2>Area 1</h2>
+        <h2>RING JACKET ご紹介アプリ</h2>
+        <div class="area1">
+        </div>
       </div>
     </section>
     <section>
       <div class="area">
-        <h2>Area 2</h2>
+        <h2>"お客様のお名前 / "ご利用店舗"</h2>
+        <div class="area2-5">
+        </div>
       </div>
     </section>
     <section>
       <div class="area">
-        <h2></h2>
+        <h2>"担当スタッフ / "ご紹介いただくお客様"</h2>
+        <div class="area2">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="area">
+        <h2>マイページへ ”Log in" をお願いします</h2>
+        <div class="area3">
+        </div>
       </div>
     </section>
   </div>
