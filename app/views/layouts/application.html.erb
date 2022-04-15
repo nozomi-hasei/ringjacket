@@ -4,14 +4,13 @@
     <title>Ringjacket</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>
-      <h1>RING JACKET</h1>
+      <h1><a href="https://ringjacket.herokuapp.com/">RING JACKET</a></h1>
       <div class="sns_link">
         <ul class="">
           <li><a href="http://www.ringjacket.co.jp/"><img src="/assets/6777318_home_architecture_house_homepage_office_icon.png" alt="" id="logo"></a></li>
@@ -34,5 +33,8 @@
     <%= yield %>
     <footer>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"></script>
+    <script src="javascript/packs/application.js"></script>
   </body>
 </html>
