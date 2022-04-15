@@ -148,7 +148,9 @@ input[type="submit"] {
 	display: flex;
 	flex-wrap: wrap;
   margin-top: 5%;
+  z-index: 50;
 }
+
 
 /*左エリア*/
 #fixed-area{
@@ -156,12 +158,50 @@ input[type="submit"] {
   position: sticky;
   top:0;
 	width: 50%;
-	height: 80vh;
+	height: 130vh;
 }
 
 /*右エリア*/
 #container{
 	width:50%;
+}
+
+#container section .area{
+  margin-top: 10%;
+}
+
+#container section .area h2{
+  z-index: 40;
+}
+
+#container section .area .area1{
+  position: absolute;
+  height: 3vh;
+  width: 30%;
+  margin-top: -3%;
+  margin-left: 11%;
+  background-color: rgba(222, 196, 152, 0.502);
+  z-index: 30;
+}
+
+#container section .area .area2{
+  position: absolute;
+  height: 3vh;
+  width: 44%;
+  margin-top: -3%;
+  margin-left:4%;
+  background-color: rgba(222, 196, 152, 0.563);
+  z-index: 30;
+}
+
+#container section .area .area3{
+  position: absolute;
+  height: 3vh;
+  width: 40%;
+  margin-top: -3%;
+  margin-left: 6%;
+  background-color: rgba(222, 196, 152, 0.512);
+  z-index: 30;
 }
 
 /*＝レスポンシブ＝*/
