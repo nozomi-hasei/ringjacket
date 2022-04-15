@@ -23,15 +23,16 @@
       <div class="sign_link">
         <% if user_signed_in? %>
           <%= current_user.name %>
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "post" %>
         <% else %>
-          <%= link_to "ログイン", new_user_session_path, class: "post" %>
-          <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+          <%= link_to "Log in", new_user_session_path, class: "post" %>
+          <%= link_to "Sign up", new_user_registration_path, class: "post" %>
         <% end %>
       </div>
     </header>
     <%= yield %>
     <footer>
+      <%= link_to "Back", :back %>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"></script>

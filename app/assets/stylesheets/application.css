@@ -1,5 +1,5 @@
 html{
-  height: 1500px;
+  font-size: 62.5%;
 }
 
 
@@ -7,27 +7,38 @@ body{
   background-color: rgb(255, 255, 255);
   background:radial-gradient(at left top, rgb(255, 255, 255) 20%, rgba(222, 196, 152, 0.997) 100%);
 }
+
+
+h2{
+  margin-top: 5%;
+  text-align: center;
+}
+
+/*=header=*/
+
 header h1{
   text-align: center;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 200;
+  font-size: 4.0rem;
 }
 
 header a{
   text-decoration: none;
+  text-align: center;
+  margin-left: 2.0%;
   color: rgb(0, 0, 0);
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+  font-size: 4.0rem;
 }
 
+/*=SNS link=*/
+
 header .sns_link ul{
-  position: absolute;
   display: flex;
+  justify-content: space-around;
   list-style: none;
-  right: 100px;
-  top: 1.8vh;
-}
-header .sns_link li{
-  padding: 0  5% 0 5%;
+  margin: 0 30% 0 30%;
 }
 
 header #logo{
@@ -35,16 +46,26 @@ header #logo{
   width: 25px;
 }
 
+/*=sign link=*/
+
 .sign_link{
-  text-align: right;
-  margin-right: 3%;
-}
-
-h2{
-  margin-top: 5%;
   text-align: center;
-
+  margin-top: 2%;
+  font-size: 2.0rem;
 }
+
+.sign_link .post{
+  padding: 0 1% 0 1%;
+  background-color: #e6e6e697;
+  border-radius: 10px;
+  padding: 0.5% 1.0% 0.5% 1.0%;
+}
+
+.sign_link a{
+  font-size: 2.0rem;
+}
+
+/*=form=*/
 
 form {
   margin-top: 2%;
@@ -97,54 +118,42 @@ input[type="submit"] {
   margin-right: auto;
 }
 
-h1,h2{
-  font-size:1.2rem;
-}
 
-h2,
-#container p,
-small{
-  margin:0 0 30px 0;
-}
+/*=レイアウト=*/
 
-
-
-/*左と右を囲う全体のエリア*/
 #wrapper{
-	position: relative;/*position stickyの基点にするため relativeをかける*/
-	display: flex;/*左エリア、右エリア横並び指定*/
-	flex-wrap: wrap;/*ボックスの折り返し可*/
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+  margin-top: 5%;
 }
 
 /*左エリア*/
 #fixed-area{
-  /*左固定記述*/
-  position: -webkit-sticky;/*Safari用*/
+  position: -webkit-sticky;
   position: sticky;
   top:0;
-	/*横半分50%　縦を100vhにする*/
 	width: 50%;
 	height: 100vh;
 }
 
 /*右エリア*/
 #container{
-	/*横半分50%にする*/
 	width:50%;
 }
 
-/*＝＝＝＝＝＝＝＝＝＝＝768px以下の見え方＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+/*＝レスポンシブ＝*/
 
 @media screen and (max-width:768px){
 #wrapper{
-	display: block;/*display:flex;を解除*/
+	display: block;
 }
 #fixed-area{
- 	position:relative!important;/*position stickyを解除*/
-	width:100%;/*横幅を100%にして1列に見せる*/
-	height: 40vh;/*縦幅を100vh⇒40vh　※任意の高さに設定可能*/
+ 	position:relative!important;
+	width:100%;
+	height: 40vh;
 }
 #container{
-	width:100%;/*横幅を100%にして1列に見せる*/
+	width:100%;
 }
 }
